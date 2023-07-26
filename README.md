@@ -14,3 +14,12 @@
 
 ## 스웨거 화면
 ![thumb](https://github.com/mightyTony/JpaCrudExample/assets/105908185/2fbb92c8-7be6-47df-9460-19eff80373dc)
+
+
+# 추후 예정 
+- Google Auth 로그인 구현 
+- HTTPS 설정 
+- Aws EC2에 배포
+- RDS에 DB 서버 만들기
+- Jenkins를 통해 무중단 배포 
+
