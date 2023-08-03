@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Home</title>
+  <title>게시판</title>
 </head>
 <body>
-<h1>Welcome, <span th:text="${#authentication.name}"></span>!</h1>
-<a th:href="@{/logout}">Logout</a>
+<h1>유저님 환영합니다</h1> <!-- 유저님 환영합니다 제목 추가 -->
+
+<!-- 로그인 버튼 -->
+<div>
+  <form th:action="@{/login}" method="post">
+    <button type="submit">로그인</button>
+  </form>
+</div>
+
+<!-- 회원가입 버튼 -->
+<div>
+  <form th:action="@{/signup}" method="get">
+    <button type="submit">회원가입</button>
+  </form>
+</div>
+
+<!-- 게시물 목록 -->
+<div>
+  <h2>게시물 목록</h2>
+  <!-- 게시물 목록을 서버에서 가져와서 출력하는 로직이 있어야 합니다. -->
+  <!-- 예시로 간단하게 하드코딩으로 게시물 리스트를 만들어봅니다. -->
+  <ul>
+    <li>게시물 1</li>
+    <li>게시물 2</li>
+    <li>게시물 3</li>
+  </ul>
+</div>
 </body>
 </html>
+
