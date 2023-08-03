@@ -19,6 +19,11 @@ spring:
   application:
     name: tony
 
+  security:
+    user:
+      name: user
+      password: 1234
+
 server:
   port: 8888
 
